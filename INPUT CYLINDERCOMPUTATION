@@ -1,0 +1,37 @@
+package labTest2;
+
+import java.util.Scanner;
+
+public class CylinderComputation {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*Write a program called CylinderComputation that prompts user for the base radius and height of a cylinder in floating point number. 
+		 * The program shall read the inputs as double; compute the base area, surface area, and volume of the cylinder; and print the values rounded to 2 decimal places. 
+		 * The formulas are:
+
+baseArea = Math.PI * radius * radius;
+surfaceArea = 2.0 * Math.PI * radius + 2.0 * baseArea;
+volume = baseArea * height*/
+		
+		double radius, height, baseArea, surfaceArea, volume;
+		
+		Scanner a = new Scanner(System.in);
+		
+		System.out.println("Radius of the circle:");
+		radius=a.nextDouble();
+		
+		System.out.println("Height of the circle:");
+		height=a.nextDouble();
+		
+		baseArea = Math.PI * radius * radius;
+		surfaceArea = 2.0 * Math.PI * radius + 2.0 * baseArea;
+		volume = baseArea * height;
+	
+		System.out.println("The base area of cylinder is "+baseArea);
+		System.out.printf("The surfaceArea of cylinder is %.2f ",surfaceArea);
+		System.out.printf("\nThe volume of cylinder is %.2f ",volume);
+	}
+
+}
